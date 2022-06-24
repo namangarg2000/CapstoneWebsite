@@ -1,0 +1,71 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #F1EEE9;
+}
+
+.login-img{
+max-width: 300px;
+height: 150px
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.login-heading{
+  color: #15133C;
+  font-family: Roboto, sans-serif;
+  font-weight: 500!important;
+}
+
+.log-btn{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #15133C;
+  color: #15133C;
+  transition: background-color 0.5s;
+}
+
+.log-btn:hover{
+  background-color: #15133C;
+  color: #F1EEE9;
+}
+
+.log-btn:active{
+  opacity: 0.75;
+}
+.input{
+  background-color: #F1EEE9!important;
+  border-color: #15133C;
+  color: #EC994B!important;
+  font-weight: bold;
+}
+
+input::placeholder{
+  color: #EC994B!important;
+}
