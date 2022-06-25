@@ -14,11 +14,11 @@ app.get("/", (req,res)=>{
   res.sendFile(__dirname + "/index.html")
 })
 
-app.get("/login.html",(req,res)=>{
+app.get("/login",(req,res)=>{
   res.sendFile(__dirname + "/login.html")
 })
 
-app.post("/login.html", (req, res) => {
+app.post("/login", (req, res) => {
   let email = req.body.email;
   let password = req.body.password;
 
