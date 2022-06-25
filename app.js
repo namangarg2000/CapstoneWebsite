@@ -29,7 +29,7 @@ app.post("/login", (req, res) => {
   }
     else{
       console.log("LOGIN FAILED");
-      res.render("login", {tryAgain: "Please try again"});
+      res.render("login", {tryAgain: "Invalid login! Please try again."});
     }
 })
 

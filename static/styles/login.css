@@ -71,4 +71,5 @@ input::placeholder{
 }
 .try-again{
   color: red;
+  margin-top: 8px;
 }
