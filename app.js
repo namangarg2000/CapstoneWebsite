@@ -29,7 +29,7 @@ app.post("/login.html", (req, res) => {
   }
     else{
       console.log("LOGIN FAILED");
-      res.sendFile(__dirname + "/login.html")
+      res.render("login", {tryAgain: "Please try again"});
     }
 })
 
