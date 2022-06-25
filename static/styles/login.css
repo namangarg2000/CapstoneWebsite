@@ -69,3 +69,6 @@ height: 150px
 input::placeholder{
   color: #EC994B!important;
 }
+.try-again{
+  display: none;
+}

@@ -8,6 +8,8 @@ const app  = express();
 app.use(express.static("static"))
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.set('view engine', 'ejs')
+
 app.get("/", (req,res)=>{
   res.sendFile(__dirname + "/index.html")
 })
@@ -22,11 +24,18 @@ app.post("/login.html", (req, res) => {
 
   console.log(email, password);
 
-  if(email == 'admin@library.edu' && password == "admin"){
+  if(email == 'admin@admin' && password == "admin"){
     res.sendFile(__dirname + "/success.html");
   }
+    else{
+      console.log("LOGIN FAILED");
+      res.sendFile(__dirname + "/login.html")
+    }
 })
 
+app.get("/signup.html", (req,res) => {
+  res.sendFile(__dirname + "/signup.html");
+})
 
 app.listen(3000, () => {
   console.log("Server Running on localhost:3000")
