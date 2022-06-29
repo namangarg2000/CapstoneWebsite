@@ -15,7 +15,8 @@ app.get("/", (req,res)=>{
 })
 
 app.get("/login",(req,res)=>{
-  res.sendFile(__dirname + "/login.html")
+  //res.sendFile(__dirname + "/login.html")
+  res.render("login", {tryAgain: ""});
 })
 
 app.post("/login", (req, res) => {
@@ -35,7 +36,8 @@ app.post("/login", (req, res) => {
 })
 
 app.get("/about", (req,res) => {
-  res.sendFile(__dirname + "/about.html");
+  //res.sendFile(__dirname + "/about.html");
+  res.render("about")
 })
 
 app.get("/developmentTeam", (req,res) =>{
