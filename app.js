@@ -25,7 +25,8 @@ app.post("/login", (req, res) => {
   console.log(email, password);
 
   if(email == 'admin@admin' && password == "admin"){
-    res.sendFile(__dirname + "/success.html");
+    //res.sendFile(__dirname + "/success.html");
+    res.render("success")
   }
     else{
       console.log("LOGIN FAILED");
@@ -33,8 +34,13 @@ app.post("/login", (req, res) => {
     }
 })
 
-app.get("/signup.html", (req,res) => {
-  res.sendFile(__dirname + "/signup.html");
+app.get("/about", (req,res) => {
+  res.sendFile(__dirname + "/about.html");
+})
+
+app.get("/developmentTeam", (req,res) =>{
+  //res.sendFile(__dirname + "/developmentTeam.html");
+  res.render("developmentTeam");
 })
 
 app.listen(3000, () => {

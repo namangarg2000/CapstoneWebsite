@@ -1,6 +1,7 @@
 body{
     padding: 0;
     background-color: #F1EEE9;
+    font-family: 'Roboto', sans-serif;
 }
 
 *{
@@ -9,14 +10,17 @@ body{
 }
 
 .home-page-image{
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 20px;
-    height: 600px;
-    background-color: black;
-    color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 98%;
 }
 
 .image-container{
   background-color: #15133C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }

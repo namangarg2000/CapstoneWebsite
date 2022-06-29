@@ -1,8 +1,9 @@
 .cards-container{
-    
+
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -20,6 +21,8 @@
     border-style: solid;
     border-width: 1px;
     border-color: black;
+    border-radius: 10%;
+    box-shadow: rgba(115, 119, 123, 0.16) 0px 1px 4px, rgb(115, 119, 123) 0px 0px 0px 3px;
 }
 
 .card-header{
@@ -29,6 +32,8 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    
+    background-color: #EC994B;
+    border-top-left-radius: 39px;
+    border-top-right-radius: 39px;
     height: 75px;
 }
