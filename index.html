@@ -6,50 +6,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Library</title>
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/general.css">
-  <link rel="stylesheet" href="styles/welcome.css">
-  <link rel="stylesheet" href="styles/cards.css">
-  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="./static/styles/header.css">
+  <link rel="stylesheet" href="./static/styles/general.css">
+
+  <link rel="stylesheet" href="./static/styles/cards.css">
+  <link rel="stylesheet" href="./static/styles/footer.css">
+  <script src="https://kit.fontawesome.com/e99e903823.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <div class="banner">
-    <div class="logo-container">
-      <img src="images/thaparlogo.png" alt="Thapar Logo" class="thapar-logo">
-    </div>
-    <div class="welcome-text">
-      Welcome to Nava Nalanda Central Library!
-    </div>
-  </div>
-
   <div class="header">
-    <!-- <a class="login-link left-section" href="./login.html"> -->
-<!-- GET the login page -->
-    <form class="left-section" action="/login" method="get">
-      <div class="left-section">
-        <button class="login">Log In</button>
-      </div>
-    </form>
-    <!-- </a> -->
 
-<form class="right-section" action="/signup.html" method="get">
-  <!-- <a href="./signup.html" class="signup-link right-section"> -->
-    <div class="right-section">
-      <button class="signup">Sign Up</button>
+    <div class="left">
+      <img src="./static/images/thaparlogo.png" class="thaparlogo" alt="">
     </div>
-  <!-- </a> -->
-</form>
+    <div class="middle">
+      <p class="welcome">Welcome to Nava Nalanda Central Library!</p>
+    </div>
+    <div class="right">
+      <div class="bt1">
+        <form class="" action="/login" method="get">
+          <button class="b1">Log In</button>
+        </form>
+      </div>
+
+      <div class="bt1">
+        <form class="" action="/about" method="get">
+          <button class="b1">About Us</button>
+        </form>
+
+      </div>
+
+    </div>
+
 
   </div>
 
-
-
-
-  <div class="home-page-image">
-    <img src="images/library_1.jpeg" alt="" class="library">
+  <div class="image-container">
+    <div class="home-page-image">
+      <img src="images/library_1.jpeg" alt="" class="library">
+    </div>
   </div>
+
 
   <div class="cards-container">
     <div class="cards">
@@ -74,11 +73,64 @@
 
   <div class="footer-container">
     <div class="footer">
-      Footer
+
+      <div class="left-footer">
+        <div class="list">
+          <h1 class="list-heading">Contact Us</h1>
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <i class="fa-solid fa-envelope"></i>
+              librarian@thapar.edu
+            </li>
+            <li class="footer-li">
+              <i class="fa-solid fa-phone"></i>
+              +91 175 239 3040
+            </li>
+            <li class="footer-li">
+              <i class="fa-solid fa-phone"></i>
+              +91 175 239 3141
+            </li>
+          </ul>
+        </div>
+
+        <div class="list">
+          <h1 class="list-heading">Library Team</h2>
+            <ul class="footer-ul">
+              <li class="footer-li">
+                <i class="fa-solid fa-envelope"></i>
+                helpcl@thapar.edu
+              </li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="middle-footer">
+        <div class="list">
+          <h1 class="list-heading">Other Links</h2>
+            <ul class="footer-ul">
+              <li class="other-links footer-li">
+                <a href="/developmentTeam">Development Team</a>
+              </li>
+              <li class="other-links footer-li">
+                <a href="https://thapar.edu/" target="_blank">Thapar Main Website</a>
+              </li>
+              <li class="other-links footer-li">
+                <a href="https://cl.thapar.edu/" target="_blank">Library Main Website</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="right-footer">
+        <img src="./static/images/thaparlogo.png" class="footer-img" alt="">
+      </div>
+
+
+
     </div>
 
     <div class="made-by">
-      Made By CPG Number: XXX
+      Made By CPG Number: 105
     </div>
   </div>
 
