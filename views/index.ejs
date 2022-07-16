@@ -1,26 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('header') %>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Library</title>
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/general.css">
-
-  <link rel="stylesheet" href="styles/cards.css">
-  <link rel="stylesheet" href="styles/footer.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/e99e903823.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-
+<div class="header-container">
   <div class="header">
 
     <div class="left">
@@ -48,39 +28,55 @@
 
   </div>
 
+  </div>
+
   <div class="image-container">
     <img class="home-page-image" src="images/library_2.jpeg" alt="Library Image" class="library">
   </div>
 
 
-  <div class="cards-container row">
+  <div class="cards-container container">
+    <div class="row">
 
-    <div class="cards col-xl-4">
-      <div class="card-header">
-        How to login?
+      <div class="col-xl-4">
+        <div class="card">
+          <div class="card-header cstm-title">
+            <h3>How to login?</h3>
+          </div>
+
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Use you thapar.edu account to login. </li>
+              <li class="list-group-item">Password for your account will be sent to your email ID once your account has been created.</li>
+            </ul>
+
+        </div>
       </div>
-      <div class="card-content">
-        <ul>
-          <li>Use you thapar.edu account to login.</li>
-          <li>Password for your account will be sent to your email ID once your account has been created.</li>
-        </ul>
+
+      <div class="col-xl-4">
+        <div class="card">
+          <div class="card-header cstm-title">
+            <h3>Sin Contacto</h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              Sin Contacto is a contacts free entry marking system that also automates the process of temperature checking.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-4">
+        <div class="card">
+          <div class="card-header cstm-title">
+            <h3>Support</h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">For support, please contact site adminstrators or development team.</p>
+            <a href="/developmentTeam" class="btn card-button">Development Team</a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="cards col-xl-4">
-      <div class="card-header">
-        Sin Contacto
-      </div>
-      Card - 2, content
-    </div>
-
-    <div class="cards col-xl-4">
-      <div class="card-header">
-        Support
-      </div>
-      Card 3
-    </div>
-
   </div>
 
   <div class="footer-container">

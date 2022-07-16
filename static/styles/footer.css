@@ -1,8 +1,10 @@
-
+/* .footer-container{
+  display: absolute;
+  bottom: 0;
+} */
 .footer{
     margin-top: 0px;
-    background-color: #EC994B;
-    /* height: 300px; */
+    background-color: #F1EEE9;
     display: flex;
     flex-direction: row;
     font-family: Roboto, Arial;

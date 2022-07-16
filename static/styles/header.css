@@ -1,6 +1,13 @@
 body{
     margin: 0;
 }
+
+.header-container{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #F1EEE9;
+}
+
 .header{
     display: flex;
     flex-direction: row;
@@ -39,7 +46,7 @@ height: 100px;
 
 }
 .b1{
-    background-color: #EC994B;
+    background-color: #EC994B!important;
     color: #15133C;
     border-style: solid;
     border-width: 1px;

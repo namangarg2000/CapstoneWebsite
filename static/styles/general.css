@@ -1,6 +1,6 @@
 body{
     padding: 0;
-    background-color: #F1EEE9;
+    /* background-color: #F1EEE9!important; */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -20,7 +20,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding-top: 50px;
   padding-bottom: 50px;
 }
