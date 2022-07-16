@@ -1,149 +1,121 @@
 <%- include('header') %>
 
-<div class="header-container">
-  <div class="header">
 
-    <div class="left">
-      <img src="images/thaparlogo.png" class="thaparlogo" alt="">
-    </div>
-    <div class="middle">
-      <p class="welcome">Welcome to Nava Nalanda Central Library!</p>
-    </div>
-    <div class="right">
-      <div class="bt1">
-        <form class="" action="/login" method="get">
-          <button class="b1">Log In</button>
-        </form>
+
+<div class="image-container">
+  <img class="home-page-image" src="images/library_2.jpeg" alt="Library Image" class="library">
+</div>
+
+
+<div class="cards-container container">
+  <div class="row">
+
+    <div class="col-xl-4">
+      <div class="card">
+        <div class="card-header cstm-title">
+          <h3>How to login?</h3>
+        </div>
+
+        <ul class="list-group list-group-flush cstmtext">
+          <li class="list-group-item">Use you thapar.edu account to login. </li>
+          <li class="list-group-item">Use the password that was sent to your email ID by your organisation administrators.</li>
+        </ul>
+
       </div>
-
-      <div class="bt1">
-        <form class="" action="/about" method="get">
-          <button class="b1">About Us</button>
-        </form>
-
-      </div>
-
     </div>
 
-
-  </div>
-
-  </div>
-
-  <div class="image-container">
-    <img class="home-page-image" src="images/library_2.jpeg" alt="Library Image" class="library">
-  </div>
-
-
-  <div class="cards-container container">
-    <div class="row">
-
-      <div class="col-xl-4">
-        <div class="card">
-          <div class="card-header cstm-title">
-            <h3>How to login?</h3>
-          </div>
-
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Use you thapar.edu account to login. </li>
-              <li class="list-group-item">Use the password that was sent to your email ID by your organisation administrators.</li>
-            </ul>
-
+    <div class="col-xl-4">
+      <div class="card">
+        <div class="card-header cstm-title">
+          <h3>Sin Contacto</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text cstmtext">
+            Sin Contacto is a contact-free entry marking and safety-check system that recognises the person of an institution biometrically and marks their entrance or exit while simultaneously checking their body temperature.
+          </p>
         </div>
       </div>
+    </div>
 
-      <div class="col-xl-4">
-        <div class="card">
-          <div class="card-header cstm-title">
-            <h3>Sin Contacto</h3>
-          </div>
-          <div class="card-body">
-            <p class="card-text">
-              Sin Contacto is a contact-free entry marking and safety-check system that recognises the person of an institution biometrically and marks their entrance or exit while simultaneously checking their body temperature.
-            </p>
-          </div>
+    <div class="col-xl-4">
+      <div class="card">
+        <div class="card-header cstm-title">
+          <h3>Support</h3>
         </div>
-      </div>
-
-      <div class="col-xl-4">
-        <div class="card">
-          <div class="card-header cstm-title">
-            <h3>Support</h3>
-          </div>
-          <div class="card-body">
-            <p class="card-text">For support, please contact site adminstrators or development team.</p>
-            <a href="/developmentTeam" class="btn card-button">Development Team</a>
-          </div>
+        <div class="card-body">
+          <p class="card-text cstmtext">For support, please contact site adminstrators or development team.</p>
+          <a href="/developmentTeam" class="btn card-button">Development Team</a>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="footer-container">
-    <div class="footer">
+<div class="footer-container-2">
+  <div class="footer">
 
-      <div class="left-footer">
-        <div class="list">
-          <h1 class="list-heading">Contact Us</h1>
+    <div class="left-footer">
+      <div class="list">
+        <h1 class="list-heading">Contact Us</h1>
+        <ul class="footer-ul">
+          <li class="footer-li">
+            <i class="fa-solid fa-envelope"></i>
+            librarian@thapar.edu
+          </li>
+          <li class="footer-li">
+            <i class="fa-solid fa-phone"></i>
+            +91 175 239 3040
+          </li>
+          <li class="footer-li">
+            <i class="fa-solid fa-phone"></i>
+            +91 175 239 3141
+          </li>
+        </ul>
+      </div>
+
+      <div class="list">
+        <h1 class="list-heading">Library Team</h2>
           <ul class="footer-ul">
             <li class="footer-li">
               <i class="fa-solid fa-envelope"></i>
-              librarian@thapar.edu
-            </li>
-            <li class="footer-li">
-              <i class="fa-solid fa-phone"></i>
-              +91 175 239 3040
-            </li>
-            <li class="footer-li">
-              <i class="fa-solid fa-phone"></i>
-              +91 175 239 3141
+              helpcl@thapar.edu
             </li>
           </ul>
-        </div>
-
-        <div class="list">
-          <h1 class="list-heading">Library Team</h2>
-            <ul class="footer-ul">
-              <li class="footer-li">
-                <i class="fa-solid fa-envelope"></i>
-                helpcl@thapar.edu
-              </li>
-            </ul>
-        </div>
       </div>
-
-      <div class="middle-footer">
-        <div class="list">
-          <h1 class="list-heading">Other Links</h2>
-            <ul class="footer-ul">
-              <li class="other-links footer-li">
-                <i class="fa-solid fa-anchor"></i>
-                <a href="/developmentTeam">Development Team</a>
-              </li>
-              <li class="other-links footer-li">
-                <i class="fa-solid fa-anchor"></i>
-                <a href="https://thapar.edu/" target="_blank">Thapar Main Website</a>
-              </li>
-              <li class="other-links footer-li">
-                <i class="fa-solid fa-anchor"></i>
-                <a href="https://cl.thapar.edu/" target="_blank">Library Main Website</a>
-              </li>
-            </ul>
-        </div>
-      </div>
-
-      <div class="right-footer">
-        <img src="images/thaparlogo.png" class="footer-img" alt="">
-      </div>
-
-
-
     </div>
 
-    <div class="made-by">
-      Made By CPG Number: 105
+    <div class="middle-footer">
+      <div class="list">
+        <h1 class="list-heading">Other Links</h2>
+          <ul class="footer-ul">
+            <li class="other-links footer-li">
+              <i class="fa-solid fa-anchor"></i>
+              <a href="/developmentTeam">Development Team</a>
+            </li>
+            <li class="other-links footer-li">
+              <i class="fa-solid fa-anchor"></i>
+              <a href="https://thapar.edu/" target="_blank">Thapar Main Website</a>
+            </li>
+            <li class="other-links footer-li">
+              <i class="fa-solid fa-anchor"></i>
+              <a href="https://cl.thapar.edu/" target="_blank">Library Main Website</a>
+            </li>
+          </ul>
+      </div>
     </div>
+
+    <div class="right-footer">
+      <img src="images/thaparlogo.png" class="footer-img" alt="">
+    </div>
+
+
+
   </div>
+
+  <div class="made-by">
+    Made By CPG Number: 105
+  </div>
+</div>
 
 
 </body>

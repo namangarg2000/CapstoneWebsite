@@ -1,8 +1,11 @@
-/* .footer-container{
-  display: absolute;
+.footer-container{
+  position: fixed;
+  left: 0;
   bottom: 0;
-} */
+  width: 100%;
+}
 .footer{
+
     margin-top: 0px;
     background-color: #F1EEE9;
     display: flex;

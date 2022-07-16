@@ -42,7 +42,7 @@ app.get("/about", (req,res) => {
 
 app.get("/developmentTeam", (req,res) =>{
   //res.sendFile(__dirname + "/developmentTeam.html");
-  res.render("developmentTeam");
+  res.render("about");
 })
 
 app.listen(3000, () => {
