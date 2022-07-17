@@ -1,0 +1,41 @@
+.about-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body{
+    background-color: #F9F7F7;
+}
+.box{
+    display: flex;
+    border-style: solid;
+    border-color: #DBE2EF;
+    /* max-height: 485px; */
+    height: auto;
+    
+}
+
+.box-img-container{
+     
+     flex: 0.5;
+     
+    
+}
+
+.box-img{
+    width: 325px;
+}
+.box-content-container{
+    flex: 1;
+}
+
+.box-content-header{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.row{
+   
+    margin-bottom: 10px;
+   
+}
