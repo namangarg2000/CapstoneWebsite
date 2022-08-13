@@ -35,11 +35,12 @@
     padding: 32px;
 }
 
-.search-by-roll-form{
-    
+.search-results-container{
+
 }
 
 .search-results{
+    font-size: 48px;
     padding-top: 16px;
     padding-bottom: 32px;
     display: flex;

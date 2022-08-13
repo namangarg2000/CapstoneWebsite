@@ -48,8 +48,7 @@ app.get("/about", (req,res) => {
 })
 
 app.get("/developmentTeam", (req,res) =>{
-  //res.sendFile(__dirname + "/developmentTeam.html");
-  res.render("about");
+  res.redirect("about");
 })
 
 app.get("/admin",function(req,res){
@@ -87,11 +86,13 @@ app.get("/admin",function(req,res){
 app.post("/admin", (req,res) => {
   const requestedRoll = req.body.roll;
   https.get(apiURL + "roll/" + requestedRoll, function(response){
-    response.on("data", function(data){
-      data = JSON.parse(data);
-      res.render("admin",{laststatus: data.laststatus, totalinlibrary: totalinlibrary, insidemorethanone: insidemorethanone, firsttime: firsttime, totalregistered: totalregistered});
-    });
+        response.on("data", function(data){
+        data = JSON.parse(data);
+        res.render("admin",{laststatus: data.laststatus, totalinlibrary: totalinlibrary, insidemorethanone: insidemorethanone, firsttime: firsttime, totalregistered: totalregistered});
+      });
+    
   });
+
 });
 
 app.listen(3000, () => {

@@ -35,7 +35,13 @@ body{
 }
 
 .row{
-   
     margin-bottom: 10px;
-   
+}
+
+.heading-container{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center!important;
 }
