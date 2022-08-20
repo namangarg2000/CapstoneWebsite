@@ -27,11 +27,34 @@ body{
 }
 .box-content-container{
     flex: 1;
+    
 }
 
 .box-content-header{
     margin-top: 40px;
     margin-left: 40px;
+}
+
+.box-content{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.box-content-links-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-content-links{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+    text-align: justify;
+    text-justify: inter-word;
+    
 }
 
 .row{
@@ -44,4 +67,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center!important;
+}
+
+.link-img{
+    height: 50px;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none!important;
+    color: inherit !important;
+    cursor: pointer;
 }

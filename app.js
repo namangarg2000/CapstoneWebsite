@@ -58,7 +58,11 @@ app.get("/admin",function(req,res){
       console.log(response.statusCode);
 
       
-
+      totalregistered = 0;
+      totalinlibrary = 0;
+      insidemorethanone = 0;
+      firsttime = 0;
+      
       response.on("data", function(data){
         data = JSON.parse(data);  //Here we receive the data from the API - of all the students
         data.forEach(person => {
