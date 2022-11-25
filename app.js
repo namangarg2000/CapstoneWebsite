@@ -36,10 +36,15 @@ app.post("/login", (req, res) => {
     res.redirect("/admin");
     //res.render("admin",{laststatus: "Entry"});
   }
-    else{
+  else if(email === password){
+    //Check if the user is existing only then redirect to the user page
+    res.redirect("/user/" + email);
+  }
+
+  else{
       console.log("LOGIN FAILED");
       res.render("login", {tryAgain: "Invalid login! Please try again."});
-    }
+  }
 })
 
 app.get("/about", (req,res) => {
@@ -97,6 +102,16 @@ app.post("/admin", (req,res) => {
     
   });
 
+});
+
+app.get("/user/:roll", (req,res) => {
+  https.get(apiURL + "roll/" + req.params.roll, function(response){
+    response.on("data", function(data){
+      data = JSON.parse(data);
+      console.log(data);
+    //   res.render("user", {roll: data.roll, name: data.name, email: data.email, laststatus: data.laststatus, entry: data.entry, exit: data.exit});
+    });
+  });
 });
 
 app.listen(3000, () => {
