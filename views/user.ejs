@@ -1,3 +1,9 @@
+<!-- {roll: data.roll, 
+    name: data.name, 
+    email: data.email, 
+    laststatus: data.laststatus, 
+    entry: data.entry, 
+    exit: data.exit} -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +11,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    
+    <link rel="stylesheet" href="../styles/general.css">
+
+    <link rel="stylesheet" href="../styles/user.css">
+
+    <link rel="stylesheet" href="../styles/cards.css">
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e99e903823.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+
+<div class="header-container">
+    <div class="header">
+
+      <div class="left">
+        <img src="../images/thaparlogo.png" class="thaparlogo" alt="">
+      </div>
+      <div class="middle">
+        <p class="welcome">Welcome to Nava Nalanda Central Library!</p>
+      </div>
+      <div class="right">
+        <div class="bt1">
+          <form class="" action="/" method="get">
+            <button class="b1">Log Out</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="data-container">
+    <div class="nameplate">
+        <div class="roll-container">
+            <h1>Roll:</h1>
+            <h1 class="roll-text"><%= roll %> </h1>
+        </div>
+
+        <div class="email-container">
+            <h1>Email:</h1>
+            <h1 class="email-text"><%= email %> </h1>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table class="table table-bordered">
+            <tbody>
+        <tr>
+            <th scope = "row">Last Status</th>
+            <td scope = "row"><%= laststatus %></td>
+        </tr>
+
+        <tr>
+            <th scope = "row">Lastest Entry</th>
+            <td scope = "row"><%= entry%></td>
+        </tr>
+
+        <tr>
+            <th scope = "row">Last Exit</th>
+            <td scope = "row"><%= exit%></td>
+        </tr>
+    </tbody>
+    </table>
+    </div>
+
+</div>
+
+
+    <div class="footer-container footer-container2">
+        <div class="footer">
+      
+          <div class="left-footer">
+            <div class="list">
+              <h1 class="list-heading">Contact Us</h1>
+              <ul class="footer-ul">
+                <li class="footer-li">
+                  <i class="fa-solid fa-envelope"></i>
+                  librarian@thapar.edu
+                </li>
+                <li class="footer-li">
+                  <i class="fa-solid fa-phone"></i>
+                  +91 175 239 3040
+                </li>
+                <li class="footer-li">
+                  <i class="fa-solid fa-phone"></i>
+                  +91 175 239 3141
+                </li>
+              </ul>
+            </div>
+      
+            <div class="list">
+              <h1 class="list-heading">Library Team</h2>
+                <ul class="footer-ul">
+                  <li class="footer-li">
+                    <i class="fa-solid fa-envelope"></i>
+                    helpcl@thapar.edu
+                  </li>
+                </ul>
+            </div>
+          </div>
+      
+          <div class="middle-footer">
+            <div class="list">
+              <h1 class="list-heading">Other Links</h2>
+                <ul class="footer-ul">
+                  <li class="other-links footer-li">
+                    <i class="fa-solid fa-anchor"></i>
+                    <a href="/developmentTeam">Development Team</a>
+                  </li>
+                  <li class="other-links footer-li">
+                    <i class="fa-solid fa-anchor"></i>
+                    <a href="https://thapar.edu/" target="_blank">Thapar Main Website</a>
+                  </li>
+                  <li class="other-links footer-li">
+                    <i class="fa-solid fa-anchor"></i>
+                    <a href="https://cl.thapar.edu/" target="_blank">Library Main Website</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+      
+          <div class="right-footer">
+            <img src="images/thaparlogo.png" class="footer-img" alt="">
+          </div>
+      
+      
+      
+        </div>
+      
+        <div class="made-by">
+          Made By CPG Number: 105
+        </div>
+      </div>
+
 </body>
 </html>
