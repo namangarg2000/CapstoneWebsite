@@ -69,45 +69,21 @@ app.get("/developmentTeam", (req,res) =>{
 
 app.get("/admin",function(req,res){
 
-    // https.get(apiURL,function(response){  
-    //   console.log(response.statusCode);
-
-      
-      
+    https.get(apiURL,function(response){  
+      console.log(response.statusCode);
     //   const now = Date.now()
     //   const ONE_HOUR = 3600000;
 
-    //   response.on("data", function(data){
-    //     data = JSON.parse(data);  //Here we receive the data from the API - of all the students
-    //     data.forEach(person => {
-    //       console.log(person);
-    //       totalregistered+=1;
-
-    //       // if(person.laststatus === "Entry"){
-    //       //   totalinlibrary+=1;
-    //       // }
-
-    //       // // if(person.laststatus === "Entry" && (parseFloat(person.entry.split(",")[0]) - now > ONE_HOUR)){
-    //       // //   insidemorethanone+=1;
-    //       // // }
-
-    //       // if(person.laststatus === "First"){
-    //       //   firsttime+=1;
-    //       // }
-
-    //     });
-    //     res.render("admin",{laststatus: "", totalinlibrary: totalinlibrary, insidemorethanone: insidemorethanone, firsttime: firsttime, totalregistered: totalregistered});
-    //   }); 
-    //   //res.render("admin",{laststatus: "", totalinlibrary: totalinlibrary, insidemorethanone: insidemorethanone, firsttime: firsttime, totalregistered: totalregistered});
-    // });
-});
+    res.render("admin",{laststatus: ""});
+  })
+})
 
 app.post("/admin", (req,res) => {
   const requestedRoll = req.body.roll;
   https.get(apiURL + "roll/" + requestedRoll, function(response){
         response.on("data", function(data){
         data = JSON.parse(data);
-        res.render("admin",{laststatus: data.laststatus, totalinlibrary: totalinlibrary, insidemorethanone: insidemorethanone, firsttime: firsttime, totalregistered: totalregistered});
+        res.render("admin",{laststatus: data.laststatus});
       });
     
   });
@@ -141,5 +117,5 @@ app.get("/user/:roll", (req,res) => {
 });
 
 app.listen(3000, () => {
-  console.log("Server Running on localhost:3000")
+  console.log("Server Running on localhost:3000");
 })

@@ -54,42 +54,7 @@
     <h1 class="admin-heading">Admin Panel</h1>
 </div>
 
-<div class="table-container">
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">S.No</th>
-            <th scope="col">Description</th>
-            <th scope="col">Number of Students</th>
-        </tr>
-    </thead>
 
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Total Number of Students currently in Library</td>
-            <td><%= totalinlibrary %></td>
-        </tr>
-
-        <tr>
-            <th scope="row">2</th>
-            <td>Students present inside for more than 1 hour</td>
-            <td><%= insidemorethanone %> </td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>First time visitors</td>
-            <td><%= firsttime %></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>Total number of registered students</td>
-            <td><%= totalregistered %></td>
-        </tr>
-        
-    </tbody>
-</table>
-</div>
 
 <form action="/admin" method="post">
 <div class="search-by-roll-container">
